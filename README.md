@@ -11,3 +11,4 @@ https://mini-ecommerce-site.netlify.app
 + Axios
 + Bootstrap
 + Fake Store API
++ @yisheng90/react-loading

@@ -1,3 +1,4 @@
+import Skeleton from "@yisheng90/react-loading";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { connect } from "react-redux";
@@ -49,7 +50,7 @@ const ProductDetail = (props) => {
     <div className="container py-3">
       <ToastContainer />
       {Object.keys(productDetail).length === 0 ? (
-        <div>Loading...</div>
+        <Skeleton width="100%" height="420px" />
       ) : (
         <div className="row">
           <div className="col-md-4">

@@ -5,6 +5,7 @@ import { getCategories, getProducts } from "../redux/actions/productActions";
 import Carousel from "./Carousel";
 import Footer from "./Footer";
 import Product from "./Product";
+import Skeleton from '@yisheng90/react-loading';
 
 const AllProducts = () => {
   const products = useSelector((state) => state.allProducts.products);
@@ -48,7 +49,7 @@ const AllProducts = () => {
     <>
       <div className="container">
         {Object.keys(products).length === 0 ? (
-          <div>Loading...</div>
+           <Skeleton width="100%" height={50} rows={12} />
         ) : (
           <>
             <div className="row">

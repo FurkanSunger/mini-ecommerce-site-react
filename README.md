@@ -10,3 +10,4 @@ https://mini-ecommerce-site.netlify.app
 + React Toastify
 + Axios
 + Bootstrap
++ Fake Store API
